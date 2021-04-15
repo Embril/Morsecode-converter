@@ -1,0 +1,33 @@
+#resultat {
+  width: 500px;
+  height: 300px;
+  border: solid black 2px;
+  margin-left: 650px;
+  background-color: black;
+  opacity: 0.8;
+}
+
+#page {
+  text-align: center;
+}
+
+H1 {
+  font-family: arial white;
+  color: antiquewhite;
+}
+
+body {
+  background: url(https://cutewallpaper.org/21/military-camo-wallpaper/Camo-Military-Army-Wallpaper-Military-Camouflage-Hd-.jpg);
+}
+
+#waterBlock {
+  position: relative;
+  background-color: black;
+  float: right;
+  margin-top: 8px;
+  margin-right: 20px;
+  margin-bottom: 500px;
+  border: 15px solid black;
+  border-radius: 20px;
+  color: white;
+}

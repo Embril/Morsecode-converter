@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS.css" />
+    <title>Knekk Koden</title>
+  </head>
+
+  <body>
+    <div id="team3"></div>
+    <script>
+      //MODEL
+
+      var morseCodeArray = {
+        a: '. ___',
+        b: '___ . . .',
+        c: '___ . ___ .',
+        d: '___ . .',
+        e: '.',
+        f: '. . ___ .',
+        g: '___ ___ .',
+        h: '. . . .',
+        i: '. .',
+        j: '. ___ ___ ___ ___',
+        k: '___ . ___',
+        l: '. ___ . .',
+        m: '___ ___',
+        n: '___ .',
+        o: '___ ___ ___',
+        p: '. ___ ___ .',
+        q: '___ ___ . ___',
+        r: '. ___ .',
+        s: '. . .',
+        t: '___',
+        u: '. . ___',
+        v: '. . . ___',
+        w: '. ___ ___',
+        x: '___ . . ___',
+        y: '___ . ___ ___',
+        z: '___ ___ . .',
+        ' ': '/', //space knappen
+        æ: '·−·−',
+        ø: '−−−·',
+        å: '·−−·−',
+      };
+
+      //VIEW
+      show();
+      function show() {
+        document.getElementById('team3').innerHTML = `
+        <div id='waterBlock'>Velkommen</div>
+                <div id="page">
+                  <h1>Morsecode Generator<h1>
+                  <input id="input1" type ="text"></input></br>
+                  <button id="rompe" onclick="tisss()">konverter til morse kode</button></br>
+                  <div id="resultat"></div>
+                </div>
+                  `;
+      }
+
+      //CONTROLLER
+
+      Emil;
+
+      function tisss() {
+        var oversett = input1.value;
+        oversett = oversett.toLowerCase();
+        oversett = oversett.split('');
+        for (var hei = 0; hei < oversett.length; hei++) {
+          oversett[hei] = morseCodeArray[oversett[hei]];
+        }
+        oversett = oversett.join(' ');
+        resultat.innerHTML = oversett;
+      }
+    </script>
+  </body>
+</html>
+<!--
+
+  
+
+
+-->
